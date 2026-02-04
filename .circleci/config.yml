@@ -196,8 +196,9 @@ workflows:
         rust-features: "--features='serde-json' --no-default-features"
 
     - build-and-test:
-        name: build-and-test:arbitrary
-        rust-features: "--features='arbitrary'"
+        name: build-and-test:fuzz
+        rust-version: "1.70"
+        rust-features: "--features='fuzz'"
 
     - cargo-semver-check:
         requires:

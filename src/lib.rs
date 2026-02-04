@@ -73,7 +73,7 @@ extern crate serde_test;
 #[cfg(all(test, feature = "serde_json"))]
 extern crate serde_json;
 
-#[cfg(feature = "arbitrary")]
+#[cfg(feature = "fuzz")]
 extern crate arbitrary;
 
 #[cfg(feature = "std")]
@@ -144,7 +144,7 @@ mod impl_fmt;
 pub mod impl_serde;
 
 // Implementations for arbitrary trait (fuzzing support)
-#[cfg(feature = "arbitrary")]
+#[cfg(feature = "fuzz")]
 mod impl_arbitrary;
 
 /// re-export serde-json derive modules

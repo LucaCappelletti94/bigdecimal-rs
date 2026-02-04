@@ -58,7 +58,7 @@ default = ["std"]
 serde-json = ["serde/derive", "serde_json"]
 string-only = []
 std = ["num-bigint/std", "num-integer/std", "num-traits/std"]
-arbitrary = ["std", "dep:arbitrary", "num-bigint/arbitrary"]
+fuzz = ["std", "arbitrary", "num-bigint/arbitrary"]
 
 # BENCH: [[bench]]
 # BENCH: name = "arithmetic"
